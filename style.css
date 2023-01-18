@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bellefair&display=swap");
+header {
+  width: 100%;
+  margin: 0;
+}
+header .banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background: url("assets/banniere.png") no-repeat;
+  background-size: cover;
+  background-position: 25%;
+}
+header .banner .menu {
+  width: 100%;
+  background-color: #cc3866;
+}
+header .banner .menu ul {
+  display: flex;
+  justify-content: right;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+header .banner .menu ul li {
+  list-style: none;
+}
+header .banner .menu ul li a {
+  text-decoration: none;
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  font-size: 20px;
+  padding: 2px;
+}
+header .banner .banner_title {
+  width: 95%;
+  margin: 0;
+  font-size: 4vw;
+  opacity: 0.8;
+  margin-top: 100px;
+}
+header .banner .title {
+  border: 1px solid black;
+  border-radius: 50px;
+  font-family: "Bebas Neue", cursive;
+  background-color: #ecdf85;
+  text-align: center;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #ecdf85;
+  display: flex;
+  flex-direction: column;
+}
+body main {
+  padding-top: 50px;
+}
+body main h2 {
+  padding: 10px;
+  background-color: #3e5d58;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 32px;
+  color: #ecdf85;
+}
+body main .sub_header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+body main .sub_header .cards .small_cards {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+body main .sub_header .cards .small_cards .presentation {
+  padding: 5px;
+  height: 150px;
+  width: 25%;
+  background-color: #3e5d58;
+  margin-right: 20px;
+  font-family: "Bebas Neue", cursive;
+  color: #f7d323;
+  font-size: 24px;
+}
+body main .sub_header .cards .card_child {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+body main .sub_header .cards .card_child .card {
+  padding: 5px;
+  width: 79%;
+  height: 205px;
+  background-color: #3e5d58;
+  margin-right: 20px;
+  font-family: "Bellefair", serif;
+  color: white;
+  font-size: 32px;
+}
+body main .sub_header .cards .card_child .card span {
+  color: #f7d323;
+}
+body main .sub_header .cards .card_child .child {
+  width: 27%;
+  display: flex;
+  justify-content: center;
+}
+body main .sub_header .cards .card_child .child img {
+  width: 226px;
+  height: 212px;
+}
+body main .rdv {
+  display: flex;
+  justify-content: right;
+  margin-top: 40px;
+  padding: 20px;
+}
+body main .rdv a {
+  font-family: "Bebas Neue", cursive;
+  text-decoration: none;
+  font-size: 34px;
+  color: #cc3866;
+}
+body main .rdv a span img {
+  width: 49px;
+  height: 49px;
+}
+body main hr {
+  border: 5px solid;
+  color: #cc3866;
+}
+body main .what {
+  background-color: #f7d323;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+body main .what .care {
+  display: flex;
+  justify-content: space-around;
+}
+body main .what .care .short {
+  width: 50%;
+  font-size: 24px;
+  font-family: "Bebas Neue", cursive;
+  color: #3e5d58;
+}
+body main .what .care .care_content ul {
+  width: 718px;
+  height: 371px;
+}
+body main .what .care .care_content ul li {
+  font-family: "Bellefair", serif;
+  font-size: 24px;
+  color: black;
+  line-height: 35px;
+}
+body main .what .care .care_content ul li span {
+  color: #cc3866;
+}
+body main .function {
+  background-color: #f7d323;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+body main .function .how {
+  display: flex;
+  justify-content: space-around;
+}
+body main .function .how .question {
+  width: 50%;
+  font-size: 24px;
+  font-family: "Bebas Neue", cursive;
+  color: #3e5d58;
+}
+body main .function .how .question .dancer {
+  display: flex;
+  justify-content: center;
+}
+body main .function .how .question .dancer img {
+  width: 381px;
+  height: 381px;
+}
+body main .function .how .response ul {
+  width: 718px;
+  height: 625px;
+}
+body main .function .how .response ul li {
+  font-family: "Bellefair", serif;
+  font-size: 24px;
+  color: black;
+  line-height: 35px;
+}
+body main .function .how .response ul li span {
+  color: #cc3866;
+}
+body main .technics {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+body main .technics .accordeon_title {
+  font-family: "Bebas Neue", cursive;
+  color: #3e5d58;
+  cursor: pointer;
+}
+body main .technics .accordeon_content {
+  font-family: "Bellefair", serif;
+  color: black;
+  font-size: 24px;
+  line-height: 35px;
+  display: none;
+}
+body main .technics .accordeon_content_visible {
+  font-family: "Bellefair", serif;
+  color: black;
+  font-size: 24px;
+  line-height: 35px;
+}
+body main .technics .accordeon_content_visible span {
+  color: #cc3866;
+}
+body main .technics .hypnose {
+  background-color: #f7d323;
+  width: 50%;
+}
+body main .technics .hypnose .accordeon_items0 img {
+  width: 25px;
+  height: 25px;
+  padding-left: 20px;
+}
+body main .technics .technics_ref {
+  width: 50%;
+  padding-left: 30px;
+}
+body main .technics .technics_ref img {
+  width: 25px;
+  height: 25px;
+  padding-left: 20px;
+}
+body main .who {
+  background-color: #ecdf85;
+}
+body main .who span {
+  color: #cc3866;
+}
+body main .who .interests {
+  background-color: #f7d323;
+  margin: auto 20px;
+  padding: 10px;
+}
+body main .who .interests h3 {
+  font-family: "Bebas Neue", cursive;
+  color: #3e5d58;
+}
+body main .who .interests p {
+  font-family: "Bellefair", serif;
+  color: black;
+  font-size: 24px;
+  line-height: 35px;
+}
+body main .who .interests p img {
+  width: 25px;
+  height: 25px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+body main .who .i_am.accordeon_content {
+  display: none;
+}
+body main .who .i_am.accordeon_content .hall {
+  margin: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+body main .who .i_am.accordeon_content .hall img {
+  width: 327px;
+  height: 301px;
+}
+body main .who .i_am.accordeon_content .i_am_content {
+  margin: auto 20px;
+  padding: 10px;
+}
+body main .who .i_am.accordeon_content .i_am_content p {
+  font-family: "Bellefair", serif;
+  color: black;
+  font-size: 24px;
+  line-height: 35px;
+}
+body main .who .i_am.accordeon_content_visible .hall {
+  margin: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+body main .who .i_am.accordeon_content_visible .hall img {
+  width: 327px;
+  height: 301px;
+}
+body main .who .i_am.accordeon_content_visible .i_am_content {
+  margin: auto 20px;
+  padding: 10px;
+}
+body main .who .i_am.accordeon_content_visible .i_am_content p {
+  font-family: "Bellefair", serif;
+  color: black;
+  font-size: 24px;
+  line-height: 35px;
+}
+body main .who_not {
+  margin: auto 20px;
+}
+body main .who_not span {
+  color: #cc3866;
+}
+body main .who_not .accordeon_title {
+  background-color: #f7d323;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Bebas Neue", cursive;
+  color: #3e5d58;
+  cursor: pointer;
+  padding-left: 10px;
+}
+body main .who_not .accordeon_title img {
+  align-self: center;
+  width: 25px;
+  height: 25px;
+  padding-left: 20px;
+  margin: auto 20px;
+}
+body main .who_not .accordeon_content {
+  font-family: "Bellefair", serif;
+  color: black;
+  font-size: 24px;
+  line-height: 35px;
+  display: none;
+}
+body main .who_not .accordeon_content_visible {
+  font-family: "Bellefair", serif;
+  color: black;
+  font-size: 24px;
+  line-height: 35px;
+  padding: 10px;
+}
+body main .rdv .contact {
+  width: 70%;
+  background-color: #3e5d58;
+}
+body main .rdv .contact p {
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  font-size: 32px;
+}
+body footer {
+  display: flex;
+  justify-content: center;
+  background-color: #ecdf85;
+}
+body footer p {
+  font-family: "Bellefair", serif;
+  font-size: 1vw;
+}
+@media screen and (max-width: 720px) {
+  body body {
+    margin: auto;
+  }
+  body body header {
+    height: 60%;
+  }
+  body body main {
+    height: 50%;
+  }
+  body body footer {
+    height: 3%;
+  }
+}/*# sourceMappingURL=style.css.map */

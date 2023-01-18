@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bellefair&display=swap");
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #f7d323;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+body header {
+  width: 100%;
+  margin: 0;
+  height: 50%;
+}
+body header .banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: url("assets/lordbrakko_A_group_of_smiling_people_walk_into_a_hangar_where_a_9402a3f7-5b89-4278-9449-26d61cdad225.png") no-repeat;
+  background-size: cover;
+  background-position: 25%;
+}
+body header .banner .banner_title {
+  width: 95%;
+  margin: 0;
+  font-size: 5vw;
+  opacity: 0.8;
+  margin-top: 100px;
+}
+body header .banner .title {
+  border: 1px solid black;
+  border-radius: 50px;
+  font-family: "Bebas Neue", cursive;
+  background-color: #ecdf85;
+  text-align: center;
+}
+body main {
+  height: 46%;
+  padding-top: 50px;
+}
+body main .inprogress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+body main .inprogress .child {
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+body main .inprogress h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3vw;
+}
+body footer {
+  display: flex;
+  justify-content: center;
+  background-color: #ecdf85;
+  height: 5%;
+}
+body footer p {
+  font-family: "Bellefair", serif;
+  font-size: 1vw;
+}
+@media screen and (max-width: 720px) {
+  body body {
+    margin: auto;
+  }
+  body body header {
+    height: 60%;
+  }
+  body body main {
+    height: 50%;
+  }
+  body body footer {
+    height: 3%;
+  }
+}/*# sourceMappingURL=construct_style.css.map */
