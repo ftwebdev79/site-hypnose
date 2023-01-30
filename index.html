@@ -1,25 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-9H4PVLVS3D"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-9H4PVLVS3D");
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Praticien en hypnose installé à Saint-Georges de Mons dans le Puy-de-Dôme, au coeur des Combrailles. Je peux vous accompagner sur l'arrêt du tabac, la gestion du stress et des émotions parmi d'autres problèmatiques"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>ANTOINE MONTEL - HYPNOSE</title>
+    <title>
+      Hypnothérapeute - Antoine Montel - Votre praticien dans le Puy-de-Dôme, au
+      coeur des Combrailles
+    </title>
   </head>
   <body>
     <header>
       <div class="banner">
+        <img src="assets/banniere_ok.png" alt="Des gens font la fête" />
+        <div class="burger_img">
+          <div class="nav">
+            <img
+              src="/assets/menu-principal.png"
+              alt="menu mobile"
+              id="burger_img"
+            />
+            <img
+              src="/assets/x-button.png"
+              alt="fermeture du menu"
+              id="close_menu"
+            />
+          </div>
+        </div>
         <nav class="menu">
           <ul>
-            <li><a href="">a quoi ça sert ?/ </a></li>
-            <li><a href="">comment je fonctionne ?/ </a></li>
-            <li><a href="">Les techniques utilisé/ </a></li>
-            <li><a href="">qui suis-je ?/</a></li>
-            <li><a href="">contact /</a></li>
-            <li><a href="">liens utile /</a></li>
-            <li><a href="">Temoignages/</a></li>
-            <li><a href="">Infos Légales</a></li>
+            <li>
+              <a href="#what" class="menu_items">a quoi ça sert ?</a
+              ><span>/</span>
+            </li>
+            <li>
+              <a href="#how" class="menu_items">comment je fonctionne ?</a
+              ><span>/</span>
+            </li>
+            <li>
+              <a href="#technics" class="menu_items">Les techniques utilisées</a
+              ><span>/</span>
+            </li>
+            <li>
+              <a href="#who" class="menu_items">qui suis-je ?</a><span>/</span>
+            </li>
+            <li>
+              <a href="#contact" class="menu_items">contacts</a> <span>/</span>
+            </li>
+            <li>
+              <a href="#links" class="menu_items">liens utile</a><span>/</span>
+            </li>
+            <!-- <li><a class="testify class="menu_items"" href="#testify">Temoignages</a><span>/</span></li> -->
+            <li><a href="#infos" class="menu_items">Infos Légales</a></li>
+          </ul>
+        </nav>
+        <nav class="burger_menu">
+          <ul>
+            <li><a href="#what">a quoi ça sert ?/ </a></li>
+            <li><a href="#how">comment je fonctionne ?/ </a></li>
+            <li><a href="#technics">Les techniques utilisé/ </a></li>
+            <li><a href="#who">qui suis-je ?/</a></li>
+            <li><a href="#contact">contacts/</a></li>
+            <li><a href="#links">liens utile /</a></li>
+            <li><a href="#testify">Temoignages/</a></li>
+            <li><a href="#infos">Infos Légales</a></li>
           </ul>
         </nav>
         <div class="banner_title">
@@ -66,7 +127,7 @@
         </div>
       </section>
       <div class="rdv">
-        <a href="https://calendly.com/montel-antoine/"
+        <a target="_blank" href="https://calendly.com/montel-antoine/"
           ><span>
             <img
               src="/assets/appointment_new_icon_180786.png"
@@ -77,15 +138,14 @@
         >
       </div>
       <hr />
+      <div class="link" id="what"></div>
       <h2 class="what_title">a quoi çà sert ?</h2>
       <section class="what">
         <div class="care">
-          <div class="short">
-            réduire les troubles psychologiques, les <br />
-            troubles fonctionnels et aider à la gestion des <br />
-            douleurs. <br />
-            Favoriser les apprentissages.
-          </div>
+          <h3 class="short">
+            réduire les troubles psychologiques, les troubles fonctionnels et
+            aider à la gestion des douleurs. Favoriser les apprentissages.
+          </h3>
           <div class="care_content">
             <ul>
               <li>
@@ -126,7 +186,7 @@
         </div>
       </section>
       <div class="rdv">
-        <a href="https://calendly.com/montel-antoine/"
+        <a target="_blank" href="https://calendly.com/montel-antoine/"
           ><span>
             <img
               src="/assets/appointment_new_icon_180786.png"
@@ -137,18 +197,21 @@
         >
       </div>
       <hr />
+      <div class="link" id="how"></div>
       <h2>comment je fonctionne ?</h2>
       <section class="function">
         <div class="how">
           <div class="question">
-            <p>
-              vous avez une question, un sujet et vous ne savez pas si l’hypnose
-              peut vous aider ?<br />
-              Appelez moi et parlons en. <br />
-              Fixons des objectifs. Entraînons nous ensemble. <br />
-              Prenez votre autonomie sur les problématiques que nous <br />
-              traitons ensemble.
-            </p>
+            <div class="how_title">
+              <h3>
+                vous avez une question, un sujet et vous ne savez pas si
+                l’hypnose peut vous aider ? Appelez moi et parlons en. <br />
+                Fixons des objectifs. Entraînons nous ensemble. <br />
+                Prenez votre autonomie sur les problématiques que nous traitons
+                ensemble.
+              </h3>
+            </div>
+
             <div class="dancer">
               <img
                 src="/assets/lordbrakko_funky_style_and_light._A_couple_dance_in_the_middle__bcf4e3f9-82d8-4c6d-9ff1-e7dd5680813b.png"
@@ -162,9 +225,12 @@
                 Pour toutes questions préalables (est ce que ça marchera sur moi
                 ? Est ce que ma difficulté peut être traiter avec l’hypnose ou
                 une autre technique…) :
-                <span>téléphonez-moi (07 56 13 28 14)</span> . Je vous répondrai
-                avec plaisir en essayant d’être le plus sincère possible. Si je
-                ne sais pas faire, je vous le dirai.
+                <span
+                  >téléphonez-moi (
+                  <a href="tel:+33756132814"> 07 56 13 28 14</a>)</span
+                >
+                . Je vous répondrai avec plaisir en essayant d’être le plus
+                sincère possible. Si je ne sais pas faire, je vous le dirai.
               </li>
               <li>
                 <span>Une séance dure environ 1h et coûte 65€.</span> (chéque ou
@@ -203,7 +269,7 @@
         </div>
       </section>
       <div class="rdv">
-        <a href="https://calendly.com/montel-antoine/"
+        <a target="_blank" href="https://calendly.com/montel-antoine/"
           ><span>
             <img
               src="/assets/appointment_new_icon_180786.png"
@@ -214,6 +280,7 @@
         >
       </div>
       <hr />
+      <div class="link" id="technics"></div>
       <h2>les techniques utilisées</h2>
       <section class="technics">
         <div class="hypnose">
@@ -335,7 +402,7 @@
         </div>
       </section>
       <div class="rdv">
-        <a href="https://calendly.com/montel-antoine/"
+        <a target="_blank" href="https://calendly.com/montel-antoine/"
           ><span>
             <img
               src="/assets/appointment_new_icon_180786.png"
@@ -346,6 +413,7 @@
         >
       </div>
       <hr />
+      <div class="link" id="who"></div>
       <h2>Qui suis-je ?</h2>
       <section class="who">
         <div class="accordeon_items5">
@@ -445,15 +513,17 @@
                 <span
                   >je vous accompagne, fort de tout ce savoir faire, au sein de
                   mon cabinet !</span
+                ><br />
+                <a href="/assets/CV hypnose.pdf" download="CV hypnose.pdf"
+                  >Voir mon CV</a
                 >
-                Voir mon CV
               </p>
             </div>
           </div>
         </div>
       </section>
       <div class="rdv">
-        <a href="https://calendly.com/montel-antoine/"
+        <a target="_blank" href="https://calendly.com/montel-antoine/"
           ><span>
             <img
               src="/assets/appointment_new_icon_180786.png"
@@ -527,6 +597,90 @@
         </div>
       </section>
       <div class="rdv">
+        <a target="_blank" href="https://calendly.com/montel-antoine/"
+          ><span>
+            <img
+              src="/assets/appointment_new_icon_180786.png"
+              alt="prendre RDV"
+            />
+          </span>
+          prendre rdv en ligne</a
+        >
+      </div>
+      <hr />
+      <div class="link" id="contact"></div>
+      <h2>contacts</h2>
+      <section class="contacts">
+        <div class="contact">
+          <p>Pour poser vos questions ou prendre un R.D.V. :</p>
+          <p>
+            suivre le lien :
+            <a target="_blank" href="https://calendly.com/montel-antoine/"
+              >Calendly.com</a
+            >
+          </p>
+          <p>
+            Me telephoner :
+            <span> <a href="tel:+33756132814">07 56 13 28 14</a> </span>
+          </p>
+          <p>
+            m’envoyer un mail :
+            <span
+              ><a target="_blank" href="mailto:montel.antoine@outlook.fr"
+                >montel.antoine@outlook.fr</a
+              >
+            </span>
+          </p>
+          <p>
+            Cabinet installé au : 10 avenue de la libération, 63780 St Georges
+            de MONS
+          </p>
+        </div>
+        <div class="icons">
+          <div class="social">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/antoinemontelhypnose"
+            >
+              <img
+                src="/assets/facebook_logo_icon_147291.png"
+                alt="lien facebook"
+            /></a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/antoine.montel.hypnose/"
+            >
+              <img
+                src="/assets/1491580635-yumminkysocialmedia26_83102.png"
+                alt="lien instagram"
+            /></a>
+          </div>
+          <div class="socialnlink">
+            <a target="_blank" href="https://calendly.com/montel-antoine/">
+              <img
+                class="calendly"
+                src="/assets/appointment_new_icon_180786.png"
+                alt="lien calendly"
+            /></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/antoinemontel/"
+            >
+              <img
+                src="/assets/linkedin_logo_icon_147268.png"
+                alt="lien linkedin"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <div class="meeting">
+        <img
+          src="/assets/lordbrakko_une_groupe_de_personnes_coutent_de_la_musique_funky__d8568c29-52de-43c0-934a-adf7b8bfd477.png"
+          alt=""
+        />
+      </div>
+      <div class="rdv">
         <a href="https://calendly.com/montel-antoine/"
           ><span>
             <img
@@ -538,40 +692,157 @@
         >
       </div>
       <hr />
-      <h2>contacts</h2>
-      <section class="rdv">
-        <div class="contact">
-          <p>Pour poser vos questions ou prendre un R.D.V. :</p>
-          <p>
-            suivre le lien :
-            <a href="https://calendly.com/montel-antoine/">Calendly.com</a>
-          </p>
-          <p>Me telephoner : <span>07 56 13 28 14</span> </p>
-          <p>m’envoyer un mail : <span>montel.antoine@outlook.fr</span></p>
-          <p>
-            Cabinet installé au : 10 avenue de la libération, 63780 St Georges
-            de MONS
-          </p>
+      <div class="link" id="links"></div>
+      <h2>Liens utiles</h2>
+      <section class="links">
+        <div class="div_links">
+          <h3>Hypnose</h3>
+          <div class="frame">
+            <a
+              href="https://www.inserm.fr/rapport/evaluation-de-lefficacite-de-la-pratique-de-lhypnose-2015/"
+              target="_blank"
+              >https://www.inserm.fr/rapport/evaluation-de-lefficacite-de-la-pratique-de-lhypnose-2015/</a
+            >
+            <a href="https://psynapse.fr/" target="_blank"
+              >https://psynapse.fr/</a
+            >
+
+            <iframe
+              width="360"
+              height="315"
+              src="https://www.youtube.com/embed/ZlCHBZVFAT8"
+              title="L'hypnose fonctionne-t-elle vraiment ? (pourquoi comment tout ça)"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
-        <div class="icons">
-          <a href="">   <img
-            src="/assets/facebook_logo_icon_147291.png"
-            alt="lien facebook"
-          /></a>
-          <a href=""> 
-          <img
-            src="/assets/1491580635-yumminkysocialmedia26_83102.png"
-            alt="lien instagram"
-          /></a>
-          <a href="">   <img
-            src="/assets/appointment_new_icon_180786.png"
-            alt="lien calendly"
-          /></a>
-          <a href="">  <img
-            src="/assets/linkedin_logo_icon_147268.png"
-            alt="lien linkedin"
-          /></a> 
+
+        <div class="div_links">
+          <h3>atelier raisonnement logique</h3>
+          <div class="frame">
+            <a href="http://www.arl-collectif.org/" target="_blank"
+              >http://www.arl-collectif.org/</a
+            >
+          </div>
         </div>
+
+        <div class="div_links">
+          <h3>Entretiens d'explication</h3>
+          <div class="frame">
+            <iframe
+              width="360"
+              height="315"
+              src="https://www.youtube.com/embed/ISQKNR7lJgI"
+              title="Comment est né l'entretien d'explicitation"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <br />
+            <a
+              href="https://eduscol.education.fr/sti/ressources_techniques/lentretien-dexplicitation-pour-exprimer-limplicite"
+              target="_blank"
+              >l'entretien d'explicitation pour exprimer l'implicite</a
+            >
+          </div>
+        </div>
+
+        <div class="div_links">
+          <h3>Autres</h3>
+          <div class="frame">
+            <iframe
+              width="360"
+              height="315"
+              src="https://www.youtube.com/embed/eLLIm-GpJh4"
+              title="Ep20 Les deux vitesses de la pensée, et le "
+              Bullshitomètre
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              width="360"
+              height="315"
+              src="https://www.youtube.com/embed/bu4vQSR4ge4"
+              title="Suis-je mon cerveau ? | Albert Moukheiber,  docteur en neurosciences | Les idées larges | ARTE"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/show/1dbcbs7eovKWi16JYnEKTu?utm_source=generator"
+              width="360"
+              height="352"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- <div class="rdv">
+        <a href="https://calendly.com/montel-antoine/"
+          ><span>
+            <img
+              src="/assets/appointment_new_icon_180786.png"
+              alt="prendre RDV"
+            />
+          </span>
+          prendre rdv en ligne</a
+        >
+      </div>
+      <hr />
+      <div class="link" id="testify"></div> -->
+      <!-- <h2>Temoignages</h2>
+      <section class="testify">
+        <div class="slider"></div>
+      </section> -->
+      <div class="rdv">
+        <a href="https://calendly.com/montel-antoine/"
+          ><span>
+            <img
+              src="/assets/appointment_new_icon_180786.png"
+              alt="prendre RDV"
+            />
+          </span>
+          prendre rdv en ligne</a
+        >
+      </div>
+      <hr />
+      <div class="link" id="infos"></div>
+      <h2>Informations Légales</h2>
+      <section class="infos">
+        <p>
+          Le site ne retient aucune données personnelles permettant une
+          identification. Les données personnelles collectées pour une prise de
+          R.D.V. sont fournies librement par l’utilisateur. Ces données ne
+          peuvent servir qu’à la prise de R.D.V. et ne sont pas utilisés pour
+          d’éventuelle prospection.
+        </p>
+        <p>Praticien en hypnose erickonienne reconnu par la W.H.O. n° : 5210</p>
+        <p>
+          Entreprise : Antoine MONTEL - Hypnose - SIRET : 94794691900018 -
+          Entreprise Individuel - 10 avenue de la libération 63780 St Georges de
+          Mons
+        </p>
+        <p>
+          Médiateur de la consommation : MCP Médiation (www.mcpmediation.org -
+          Médiation de la Consommation & Patrimoine -12 square Desnouettes
+          -75015 Paris)
+        </p>
+        <p>Création du site par : Franck TONDUF</p>
+        <p>
+          Hebergement du site : OVH - SAS au capital de 10 059 500 € - RCS Lille
+          Métropole 424 761 419 00045 - Code APE 6202A - N° TVA : FR 22 424 761
+          419 - Siège social : 2 rue Kellermann – 59100 Roubaix – France
+        </p>
       </section>
     </main>
     <footer>

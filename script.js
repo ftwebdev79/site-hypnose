@@ -12,7 +12,6 @@ class Accordeon {
       this.title.addEventListener("click", () => {
         this.content.classList.toggle("accordeon_content");
         this.content.classList.toggle("accordeon_content_visible");
-        console.log("youpi");
       })
     }
 }
@@ -26,20 +25,27 @@ const accordeon5 = new Accordeon(document.querySelector(".accordeon_items4"));
 const accordeon6 = new Accordeon(document.querySelector(".accordeon_items5"));
 const accordeon7 = new Accordeon(document.querySelector(".accordeon_items6"));
 
-// const items = document.querySelectorAll(".accordeon_items");
-// const titles = document.querySelectorAll("h3.accordeon_title");
-// const contents = document.querySelectorAll("p.accordeon_content");
 
-// console.log(titles, items, contents);
+const burger = document.querySelector('#burger_img')
+const burgerMenu = document.querySelector('.menu')
+const links = document.querySelectorAll('.menu_items')
+const burgerOpen = document.querySelector('#burger_img')
+const burgerClose  = document.querySelector('#close_menu')
 
-// titles.forEach((title) => {
-//   if (
-//     title.addEventListener("click", () => {
-//       contents.forEach((content) => {
-//         content.classList.remove("accordeon_content");
-//         content.classList.add("accordeon_content_visible");
-//         console.log("youpi");
-//       });
-//     })
-//   );
-// });
+burger.addEventListener('click', () => {
+  burgerMenu.classList.toggle('show_menu')
+  burgerOpen.style.display = 'none'
+  burgerClose.style.display = 'block'
+})
+
+burgerClose.addEventListener('click', () => {
+  burgerMenu.classList.toggle('show_menu')
+  burgerOpen.style.display = 'block'
+  burgerClose.style.display = 'none'
+})
+
+links.forEach((link) => {
+  link.addEventListener('click', () => {
+    burgerMenu.classList.remove('show_menu')
+  })
+})

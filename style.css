@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bellefair&display=swap");
 header {
   width: 100%;
-  margin: 0;
+  margin: 0px;
 }
 header .banner {
   display: flex;
@@ -9,36 +9,65 @@ header .banner {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  background: url("assets/banniere.png") no-repeat;
-  background-size: cover;
-  background-position: 25%;
+}
+header .banner img {
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 10px;
+}
+header .banner .burger_img {
+  display: none;
 }
 header .banner .menu {
   width: 100%;
   background-color: #cc3866;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 header .banner .menu ul {
   display: flex;
   justify-content: right;
   padding-left: 10px;
   padding-right: 10px;
+  align-items: center;
 }
 header .banner .menu ul li {
   list-style: none;
+}
+header .banner .menu ul li span {
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  font-size: 1.6vw;
+  margin: auto 0.5vw;
 }
 header .banner .menu ul li a {
   text-decoration: none;
   font-family: "Bebas Neue", cursive;
   color: white;
-  font-size: 20px;
+  font-size: 24px;
   padding: 2px;
+}
+header .banner .menu ul li a:hover {
+  color: #f7d323;
+}
+header .banner .menu ul .testify {
+  display: none;
+}
+header .banner .burger_menu {
+  display: none;
+  overflow-x: hidden;
 }
 header .banner .banner_title {
   width: 95%;
   margin: 0;
   font-size: 4vw;
   opacity: 0.8;
-  margin-top: 100px;
+  position: relative;
+  top: 225px;
 }
 header .banner .title {
   border: 1px solid black;
@@ -48,6 +77,7 @@ header .banner .title {
   text-align: center;
 }
 
+html,
 body {
   box-sizing: border-box;
   margin: 0;
@@ -55,10 +85,17 @@ body {
   background-color: #ecdf85;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
+html main,
 body main {
   padding-top: 50px;
 }
+html main .link,
+body main .link {
+  height: 30px;
+}
+html main h2,
 body main h2 {
   padding: 10px;
   background-color: #3e5d58;
@@ -68,147 +105,202 @@ body main h2 {
   font-size: 32px;
   color: #ecdf85;
 }
+html main .sub_header,
 body main .sub_header {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: 17%;
 }
+html main .sub_header .cards .small_cards,
 body main .sub_header .cards .small_cards {
   display: flex;
   justify-content: space-between;
-  margin-left: 20px;
+  margin-left: 1rem;
 }
+html main .sub_header .cards .small_cards .presentation,
 body main .sub_header .cards .small_cards .presentation {
   padding: 5px;
-  height: 150px;
-  width: 25%;
+  height: auto;
+  width: 50%;
   background-color: #3e5d58;
   margin-right: 20px;
   font-family: "Bebas Neue", cursive;
   color: #f7d323;
   font-size: 24px;
 }
+html main .sub_header .cards .card_child,
 body main .sub_header .cards .card_child {
   display: flex;
   margin-top: 50px;
   margin-left: 20px;
 }
+html main .sub_header .cards .card_child .card,
 body main .sub_header .cards .card_child .card {
   padding: 5px;
   width: 79%;
-  height: 205px;
+  height: auto;
   background-color: #3e5d58;
   margin-right: 20px;
   font-family: "Bellefair", serif;
   color: white;
-  font-size: 32px;
+  font-size: 28px;
 }
+html main .sub_header .cards .card_child .card span,
 body main .sub_header .cards .card_child .card span {
   color: #f7d323;
 }
+html main .sub_header .cards .card_child .child,
 body main .sub_header .cards .card_child .child {
   width: 27%;
   display: flex;
   justify-content: center;
 }
+html main .sub_header .cards .card_child .child img,
 body main .sub_header .cards .card_child .child img {
   width: 226px;
   height: 212px;
 }
+html main .rdv,
 body main .rdv {
   display: flex;
   justify-content: right;
   margin-top: 40px;
   padding: 20px;
 }
+html main .rdv a,
 body main .rdv a {
   font-family: "Bebas Neue", cursive;
   text-decoration: none;
   font-size: 34px;
   color: #cc3866;
 }
+html main .rdv a span img,
 body main .rdv a span img {
   width: 49px;
   height: 49px;
 }
+html main hr,
 body main hr {
   border: 5px solid;
   color: #cc3866;
 }
+html main .what,
 body main .what {
   background-color: #f7d323;
   margin-left: 20px;
   margin-right: 20px;
 }
+html main .what .care,
 body main .what .care {
   display: flex;
   justify-content: space-around;
 }
+html main .what .care .short,
 body main .what .care .short {
-  width: 50%;
-  font-size: 24px;
+  width: 100%;
   font-family: "Bebas Neue", cursive;
   color: #3e5d58;
+  padding-left: 10px;
 }
+html main .what .care .care_content,
+body main .what .care .care_content {
+  display: flex;
+  justify-content: space-around;
+}
+html main .what .care .care_content ul,
 body main .what .care .care_content ul {
-  width: 718px;
-  height: 371px;
+  width: 80%;
+  padding-left: 55px;
 }
+html main .what .care .care_content ul li,
 body main .what .care .care_content ul li {
   font-family: "Bellefair", serif;
-  font-size: 24px;
+  font-size: 20px;
   color: black;
   line-height: 35px;
 }
+html main .what .care .care_content ul li span,
 body main .what .care .care_content ul li span {
   color: #cc3866;
 }
+html main .function,
 body main .function {
   background-color: #f7d323;
   margin-left: 20px;
   margin-right: 20px;
 }
+html main .function .how,
 body main .function .how {
   display: flex;
   justify-content: space-around;
 }
+html main .function .how .question,
 body main .function .how .question {
-  width: 50%;
-  font-size: 24px;
+  width: 95%;
   font-family: "Bebas Neue", cursive;
   color: #3e5d58;
+  padding-left: 0px;
 }
+html main .function .how .question .how_title,
+body main .function .how .question .how_title {
+  width: 100%;
+}
+html main .function .how .question .how_title h3,
+body main .function .how .question .how_title h3 {
+  padding-left: 2%;
+}
+html main .function .how .question .dancer,
 body main .function .how .question .dancer {
+  width: 105%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
+html main .function .how .question .dancer img,
 body main .function .how .question .dancer img {
   width: 381px;
   height: 381px;
+  margin: 20px 10px;
 }
+html main .function .how .response,
+body main .function .how .response {
+  width: 100%;
+}
+html main .function .how .response ul,
 body main .function .how .response ul {
-  width: 718px;
-  height: 625px;
+  width: 85%;
+  padding-left: 12%;
 }
+html main .function .how .response ul li,
 body main .function .how .response ul li {
   font-family: "Bellefair", serif;
-  font-size: 24px;
+  font-size: 20px;
   color: black;
   line-height: 35px;
 }
+html main .function .how .response ul li span,
 body main .function .how .response ul li span {
   color: #cc3866;
 }
+html main .function .how .response ul li a,
+body main .function .how .response ul li a {
+  color: #cc3866;
+}
+html main .technics,
 body main .technics {
   display: flex;
   margin-left: 20px;
   margin-right: 20px;
 }
+html main .technics .accordeon_title,
 body main .technics .accordeon_title {
   font-family: "Bebas Neue", cursive;
   color: #3e5d58;
   cursor: pointer;
 }
+html main .technics .accordeon_content,
 body main .technics .accordeon_content {
   font-family: "Bellefair", serif;
   color: black;
@@ -216,109 +308,138 @@ body main .technics .accordeon_content {
   line-height: 35px;
   display: none;
 }
+html main .technics .accordeon_content_visible,
 body main .technics .accordeon_content_visible {
   font-family: "Bellefair", serif;
   color: black;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 35px;
 }
+html main .technics .accordeon_content_visible span,
 body main .technics .accordeon_content_visible span {
   color: #cc3866;
 }
+html main .technics .hypnose,
 body main .technics .hypnose {
   background-color: #f7d323;
-  width: 50%;
+  width: 95%;
+  padding-left: 10px;
 }
+html main .technics .hypnose .accordeon_items0 img,
 body main .technics .hypnose .accordeon_items0 img {
   width: 25px;
   height: 25px;
   padding-left: 20px;
 }
+html main .technics .technics_ref,
 body main .technics .technics_ref {
-  width: 50%;
+  width: 95%;
   padding-left: 30px;
 }
+html main .technics .technics_ref img,
 body main .technics .technics_ref img {
   width: 25px;
   height: 25px;
   padding-left: 20px;
 }
+html main .who,
 body main .who {
   background-color: #ecdf85;
 }
+html main .who span,
 body main .who span {
   color: #cc3866;
 }
+html main .who .interests,
 body main .who .interests {
   background-color: #f7d323;
   margin: auto 20px;
   padding: 10px;
 }
+html main .who .interests h3,
 body main .who .interests h3 {
   font-family: "Bebas Neue", cursive;
   color: #3e5d58;
 }
+html main .who .interests p,
 body main .who .interests p {
   font-family: "Bellefair", serif;
   color: black;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 35px;
 }
+html main .who .interests p img,
 body main .who .interests p img {
   width: 25px;
   height: 25px;
   padding-left: 20px;
   cursor: pointer;
 }
+html main .who .i_am.accordeon_content,
 body main .who .i_am.accordeon_content {
   display: none;
 }
+html main .who .i_am.accordeon_content .hall,
 body main .who .i_am.accordeon_content .hall {
   margin: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
+html main .who .i_am.accordeon_content .hall img,
 body main .who .i_am.accordeon_content .hall img {
   width: 327px;
   height: 301px;
 }
+html main .who .i_am.accordeon_content .i_am_content,
 body main .who .i_am.accordeon_content .i_am_content {
   margin: auto 20px;
   padding: 10px;
 }
+html main .who .i_am.accordeon_content .i_am_content p,
 body main .who .i_am.accordeon_content .i_am_content p {
   font-family: "Bellefair", serif;
   color: black;
   font-size: 24px;
   line-height: 35px;
 }
+html main .who .i_am.accordeon_content_visible .hall,
 body main .who .i_am.accordeon_content_visible .hall {
   margin: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
+html main .who .i_am.accordeon_content_visible .hall img,
 body main .who .i_am.accordeon_content_visible .hall img {
   width: 327px;
   height: 301px;
 }
+html main .who .i_am.accordeon_content_visible .i_am_content,
 body main .who .i_am.accordeon_content_visible .i_am_content {
   margin: auto 20px;
   padding: 10px;
 }
+html main .who .i_am.accordeon_content_visible .i_am_content p,
 body main .who .i_am.accordeon_content_visible .i_am_content p {
   font-family: "Bellefair", serif;
   color: black;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 35px;
 }
+html main .who .i_am.accordeon_content_visible .i_am_content p a,
+body main .who .i_am.accordeon_content_visible .i_am_content p a {
+  color: #cc3866;
+}
+html main .who_not,
 body main .who_not {
   margin: auto 20px;
 }
+html main .who_not span,
 body main .who_not span {
   color: #cc3866;
 }
+html main .who_not .accordeon_title,
 body main .who_not .accordeon_title {
   background-color: #f7d323;
   display: flex;
@@ -328,6 +449,7 @@ body main .who_not .accordeon_title {
   cursor: pointer;
   padding-left: 10px;
 }
+html main .who_not .accordeon_title img,
 body main .who_not .accordeon_title img {
   align-self: center;
   width: 25px;
@@ -335,6 +457,7 @@ body main .who_not .accordeon_title img {
   padding-left: 20px;
   margin: auto 20px;
 }
+html main .who_not .accordeon_content,
 body main .who_not .accordeon_content {
   font-family: "Bellefair", serif;
   color: black;
@@ -342,42 +465,390 @@ body main .who_not .accordeon_content {
   line-height: 35px;
   display: none;
 }
+html main .who_not .accordeon_content_visible,
 body main .who_not .accordeon_content_visible {
   font-family: "Bellefair", serif;
   color: black;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 35px;
   padding: 10px;
 }
-body main .rdv .contact {
+html main .contacts,
+body main .contacts {
+  display: flex;
+  margin: auto 20px 20px 20px;
+}
+html main .contacts .contact,
+body main .contacts .contact {
   width: 70%;
   background-color: #3e5d58;
 }
-body main .rdv .contact p {
+html main .contacts .contact p,
+body main .contacts .contact p {
+  padding-left: 10px;
   font-family: "Bebas Neue", cursive;
   color: white;
   font-size: 32px;
 }
+html main .contacts .contact p a,
+body main .contacts .contact p a {
+  color: #ecdf85;
+}
+html main .contacts .icons,
+body main .contacts .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 30%;
+  margin: 50px;
+}
+html main .contacts .icons a .calendly,
+body main .contacts .icons a .calendly {
+  width: 7.6rem;
+  margin: 15px 45px;
+}
+html main .contacts .icons img,
+body main .contacts .icons img {
+  width: 7rem;
+  margin: 20px 40px;
+}
+html .meeting,
+body .meeting {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+html .meeting img,
+body .meeting img {
+  margin: auto 20px;
+  width: 97.6%;
+}
+html .links,
+body .links {
+  margin: auto 20px;
+}
+html .links .div_links,
+body .links .div_links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: auto 10px;
+  margin: 20px;
+}
+html .links .div_links h3,
+body .links .div_links h3 {
+  font-size: 24px;
+  font-family: "Bebas Neue", cursive;
+  color: #cc3866;
+}
+html .links .div_links a,
+body .links .div_links a {
+  font-family: "Bellefair", serif;
+  color: black;
+  font-size: 20px;
+  line-height: 35px;
+}
+html .links .div_links a:visited,
+html .links .div_links a:hover,
+body .links .div_links a:visited,
+body .links .div_links a:hover {
+  color: #cc3866;
+}
+html .links .div_links .frame,
+body .links .div_links .frame {
+  display: flex;
+  flex-direction: column;
+}
+html .links .div_links .frame iframe,
+body .links .div_links .frame iframe {
+  margin: 20px;
+}
+html .infos,
+body .infos {
+  margin: auto 20px;
+  padding: 10px;
+  font-family: "Bellefair", serif;
+  color: black;
+  font-size: 14px;
+  line-height: 35px;
+}
+html footer,
 body footer {
   display: flex;
   justify-content: center;
   background-color: #ecdf85;
 }
+html footer p,
 body footer p {
   font-family: "Bellefair", serif;
   font-size: 1vw;
 }
-@media screen and (max-width: 720px) {
-  body body {
-    margin: auto;
+@media (min-width: 340px) and (max-width: 930px) {
+  html header,
+body header {
+    margin: 0;
+    width: 100%;
   }
-  body body header {
-    height: 60%;
+  html header .banner,
+body header .banner {
+    width: 100%;
   }
-  body body main {
-    height: 50%;
+  html header .banner img,
+body header .banner img {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    top: 10px;
   }
-  body body footer {
-    height: 3%;
+  html header .banner .burger_img,
+body header .banner .burger_img {
+    display: flex;
+    align-content: center;
+    width: 100%;
+    height: 25px;
+    background-color: #cc3866;
+    z-index: 2;
+    padding: 10px;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+  }
+  html header .banner .burger_img img,
+body header .banner .burger_img img {
+    width: 20px;
+    padding-left: 20px;
+  }
+  html header .banner .burger_img #close_menu,
+body header .banner .burger_img #close_menu {
+    display: none;
+  }
+  html header .banner .burger_menu,
+body header .banner .burger_menu {
+    display: none;
+    position: relative;
+    background-color: #cc3866;
+  }
+  html header .banner .burger_menu ul li,
+body header .banner .burger_menu ul li {
+    list-style: none;
+  }
+  html header .banner .burger_menu ul li a,
+body header .banner .burger_menu ul li a {
+    font-family: "Bebas Neue", cursive;
+  }
+  html header .banner .menu,
+body header .banner .menu {
+    transform: translate(-100%);
+    transition: transform 0.2s;
+    top: 30px;
+    right: 0;
+    left: 0;
+    bottom: 50;
+    z-index: 99;
+  }
+  html header .banner .menu ul,
+body header .banner .menu ul {
+    justify-content: left;
+    margin: 0;
+    flex-direction: column;
+  }
+  html header .banner .menu ul span,
+body header .banner .menu ul span {
+    display: none;
+  }
+  html header .banner .menu ul li a,
+body header .banner .menu ul li a {
+    font-size: 20px;
+  }
+  html header .banner .show_menu,
+body header .banner .show_menu {
+    transform: translateY(0);
+  }
+  html header .banner .banner_title,
+body header .banner .banner_title {
+    position: relative;
+    top: 70px;
+  }
+  html main hr,
+body main hr {
+    margin-top: -5px;
+  }
+  html main .rdv,
+body main .rdv {
+    margin-top: -5px;
+  }
+  html main .rdv a,
+body main .rdv a {
+    font-size: 22px;
+  }
+  html main .rdv a span img,
+body main .rdv a span img {
+    width: 24px;
+    height: 24px;
+  }
+  html main .sub_header,
+body main .sub_header {
+    margin: 110px auto;
+  }
+  html main .sub_header .cards .small_cards,
+body main .sub_header .cards .small_cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  html main .sub_header .cards .small_cards .presentation,
+body main .sub_header .cards .small_cards .presentation {
+    margin-bottom: 20px;
+    width: 85%;
+  }
+  html main .sub_header .card_child,
+body main .sub_header .card_child {
+    flex-direction: column;
+    align-items: center;
+  }
+  html main .sub_header .card_child .card,
+body main .sub_header .card_child .card {
+    max-width: 80%;
+  }
+  html main .sub_header .card_child .child,
+body main .sub_header .card_child .child {
+    margin-top: 20px;
+    width: 100%;
+  }
+  html main .sub_header .card_child .child img,
+body main .sub_header .card_child .child img {
+    width: 226px;
+    height: 226px;
+    margin: 0;
+  }
+  html main .what,
+body main .what {
+    margin: auto 10px;
+  }
+  html main .what .care,
+body main .what .care {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  html main .what .care .short,
+body main .what .care .short {
+    width: 100%;
+    padding-left: 5px;
+  }
+  html main .what .care .care_content ul,
+body main .what .care .care_content ul {
+    width: 100%;
+    padding: 10px;
+  }
+  html main .what .care .care_content ul li,
+body main .what .care .care_content ul li {
+    list-style: none;
+    padding: 12px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  html main .function,
+body main .function {
+    margin: auto 10px;
+  }
+  html main .function .how,
+body main .function .how {
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto 10px;
+  }
+  html main .function .how .question,
+body main .function .how .question {
+    width: 100%;
+  }
+  html main .function .how .question .dancer img,
+body main .function .how .question .dancer img {
+    width: 250px;
+    height: 250px;
+  }
+  html main .function .how .response ul,
+body main .function .how .response ul {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  html main .function .how .response ul li,
+body main .function .how .response ul li {
+    list-style: none;
+    padding: 12px;
+    font-size: 20px;
+  }
+  html main .technics,
+body main .technics {
+    flex-direction: column;
+    align-items: center;
+  }
+  html main .technics .hypnose,
+body main .technics .hypnose {
+    width: 100%;
+  }
+  html main .technics .technics_ref,
+body main .technics .technics_ref {
+    width: 100%;
+  }
+  html main .who .i_am.accordeon_content_visible .hall,
+body main .who .i_am.accordeon_content_visible .hall {
+    margin: 20px auto;
+  }
+  html main .contacts,
+body main .contacts {
+    flex-direction: column;
+    align-items: center;
+    margin: auto 10px;
+  }
+  html main .contacts .contact,
+body main .contacts .contact {
+    width: 100%;
+  }
+  html main .contacts .contact p,
+body main .contacts .contact p {
+    font-size: 26px;
+  }
+  html main .contacts .icons,
+body main .contacts .icons {
+    width: 100%;
+  }
+  html main .links .div_links .frame iframe,
+body main .links .div_links .frame iframe {
+    width: 250px;
+    height: 215px;
+    margin: 10px;
+  }
+}
+@media (min-width: 820px) and (max-width: 1180px) {
+  html header .banner .menu ul li a,
+body header .banner .menu ul li a {
+    text-decoration: none;
+    font-family: "Bebas Neue", cursive;
+    color: white;
+    font-size: 20px;
+    padding: 2px;
+  }
+  html header .banner .banner_title,
+body header .banner .banner_title {
+    width: 95%;
+    margin: 0;
+    font-size: 4vw;
+    opacity: 0.8;
+    position: relative;
+    top: 150px;
+  }
+  html html main .contacts .contact p,
+html body main .contacts .contact p,
+body html main .contacts .contact p,
+body body main .contacts .contact p {
+    padding-left: 10px;
+    font-family: "Bebas Neue", cursive;
+    color: white;
+    font-size: 26px;
   }
 }/*# sourceMappingURL=style.css.map */

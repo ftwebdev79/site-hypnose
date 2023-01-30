@@ -1,52 +1,77 @@
 header {
-    width: 100%;
-    margin: 0;
-    // height: 50%;
-
-    .banner {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+  width: 100%;
+  margin: 0px;
+  .banner {
+    img {
+      position: absolute;
       width: 100%;
-      background: url("assets/banniere.png")
-        no-repeat;
-      background-size: cover;
-      background-position: 25%;
+      max-width: 100%;
+      object-fit: cover;
+      top: 10px;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    .burger_img {
+      display: none;
+    }
+    .menu {
+      width: 100%;
+      background-color: #cc3866;
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      ul {
+        display: flex;
+        justify-content: right;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-items: center;
+        li {
+          list-style: none;
+          span {
+            font-family: "Bebas Neue", cursive;
+            color: white;
+            font-size: 1.6vw;
+            margin: auto 0.5vw;
+          }
 
-      .menu {
-        width: 100%;
-        background-color: #cc3866;
-        ul {
-          display: flex;
-          justify-content: right;
-          padding-left: 10px;
-          padding-right: 10px;
-          li {
-            list-style: none;
-            a {
-              text-decoration: none;
-              font-family: "Bebas Neue", cursive;
-              color: white;
-              font-size: 20px;
-              padding: 2px;
-            }
+          a {
+            text-decoration: none;
+            font-family: "Bebas Neue", cursive;
+            color: white;
+            font-size: 24px;
+            padding: 2px;
+          }
+          a:hover {
+            color: #f7d323;
           }
         }
-      }
-      .banner_title {
-        width: 95%;
-        margin: 0;
-        font-size: 4vw;
-        opacity: 0.8;
-        margin-top: 100px;
-      }
-      .title {
-        border: 1px solid black;
-        border-radius: 50px;
-        font-family: "Bebas Neue", cursive;
-        background-color: #ecdf85;
-        text-align: center;
+        .testify {
+          display: none;
+        }
       }
     }
+    .burger_menu {
+      display: none;
+      overflow-x: hidden;
+    }
+    .banner_title {
+      width: 95%;
+      margin: 0;
+      font-size: 4vw;
+      opacity: 0.8;
+      position: relative;
+      top: 225px;
+    }
+    .title {
+      border: 1px solid black;
+      border-radius: 50px;
+      font-family: "Bebas Neue", cursive;
+      background-color: #ecdf85;
+      text-align: center;
+    }
   }
+}
